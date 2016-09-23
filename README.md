@@ -1,7 +1,7 @@
-# Linkin_database_password_arrange-
+# Linkedin_database_password_arrange-
 
 ##What's this?
-linkdIn database combine password with mails    
+linkdedIn database combine password with mails    
 look like:  
 ```
 update idemail set idemail.password = mails.password where idemail.mail = mails.mail;
