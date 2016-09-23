@@ -27,8 +27,7 @@ for i in range(117205873):
         port = 3306,
         user='root',
         passwd='123',
-        db ='test',
-        cursorclass = MySQLdb.cursors.DictCursor
+        db ='test'
         )
 
     sql="select mail from mails where flag = 1 limit "+bytes(i)+",1;"
@@ -45,7 +44,7 @@ for i in range(117205873):
     #print sql2
 
     cur.execute(sql2)
-    sql3="update mails set flag = 0 where mail = %s;"
+    sql3="update mails set flag = 0 where mail = \""+str(data[0])+"\";"
     cur.execute(sql3,data)
     pbar.update(i+1)
 
