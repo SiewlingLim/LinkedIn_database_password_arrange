@@ -45,7 +45,7 @@ for i in range(117205873):
 
     cur.execute(sql2)
     sql3="update mails set flag = 0 where mail = \""+str(data[0])+"\";"
-    cur.execute(sql3,data)
+    cur.execute(sql3)
     pbar.update(i+1)
 
 
